@@ -1,29 +1,29 @@
 <script>
-import { register } from 'swiper/element/bundle';
-register();
- // Import Swiper Vue.js components
- import { Swiper, SwiperSlide } from 'swiper/vue';
+// import { register } from 'swiper/element/bundle';
+// register();
+//  // Import Swiper Vue.js components
+//  import { Swiper, SwiperSlide } from 'swiper/vue';
 
-// Import Swiper styles
-import 'swiper/css';
+// // Import Swiper styles
+// import 'swiper/css';
 
-import 'swiper/css/pagination';
+// import 'swiper/css/pagination';
 
 
-// import required modules
-import { Pagination } from 'swiper/modules';
+// // import required modules
+// import { Pagination } from 'swiper/modules';
 
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    return {
-      modules: [Pagination],
-    };
-  },
-};
+// export default {
+//   components: {
+//     Swiper,
+//     SwiperSlide,
+//   },
+//   setup() {
+//     return {
+//       modules: [Pagination],
+//     };
+//   },
+// };
 </script>
 
 <template>
@@ -57,7 +57,7 @@ export default {
             <div class="text-2xl text-end pr-8 leading-snug">設計不僅僅是美學的表達，更是溝通的藝術<br>每個設計作品都代表一段故事、一個品牌的靈魂、一種價值的傳遞</div>  
         </div>
         <!-- Swiper -->
-        <swiper :slidesPerView="4" :spaceBetween="30" :centeredSlides="true" :pagination="{
+        <!-- <swiper :slidesPerView="4" :spaceBetween="30" :centeredSlides="true" :pagination="{
             clickable: true,
           }" :modules="modules"
           class="mySwiper w-full h-[800px] flex">
@@ -97,7 +97,7 @@ export default {
               </div>  
             </a>
           </swiper-slide>
-        </swiper>
+        </swiper> -->
       </section>
       <section class="code-area flex w-full p-5 gap-6">
         <div class="w-11/12 flex flex-col gap-[100px] pl-[100px] py-[100px] ">

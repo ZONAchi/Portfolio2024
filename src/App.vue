@@ -1,4 +1,29 @@
-<script setup>
+<script>
+import { register } from 'swiper/element/bundle';
+register();
+ // Import Swiper Vue.js components
+ import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Pagination],
+    };
+  },
+};
 </script>
 
 <template>
@@ -18,7 +43,7 @@
         </div>
       </nav>
     </header>
-    <main class="flex flex-col items-center gap-36">
+    <main class="flex flex-col w-screen items-center gap-36">
       <!-- banner -->
       <section class="w-full">
         <img src="./assets/orange-cloud.jpg" class="w-full" alt="">
@@ -32,7 +57,47 @@
             <div class="text-2xl text-end pr-8 leading-snug">設計不僅僅是美學的表達，更是溝通的藝術<br>每個設計作品都代表一段故事、一個品牌的靈魂、一種價值的傳遞</div>  
         </div>
         <!-- Swiper -->
-  
+        <swiper :slidesPerView="4" :spaceBetween="30" :centeredSlides="true" :pagination="{
+            clickable: true,
+          }" :modules="modules"
+          class="mySwiper w-full h-[800px] flex">
+          <swiper-slide class="swiper-slide hover:scale-105">
+            <a href="">
+              <img src="./assets/KAIASelectShop-1x1-2.png" alt="">
+              <div class="slide-item">
+                <span class="text-3xl font-bold">KAIA Select Shop<br>網站設計</span>
+                <span class="text-2xl">為居家選物品牌創建線上購物平台，展現品牌的獨特風格和價值傳遞。</span>
+              </div>  
+            </a>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide hover:scale-105">
+            <a href="">
+              <img src="./assets/KAIASelectShop-1x1-2.png" alt="">
+              <div class="slide-item">
+                <span class="text-3xl font-bold">KAIA Select Shop<br>網站設計</span>
+                <span class="text-2xl">為居家選物品牌創建線上購物平台，展現品牌的獨特風格和價值傳遞。</span>
+              </div>  
+            </a>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide hover:scale-105">
+            <a href="">
+              <img src="./assets/KAIASelectShop-1x1-2.png" alt="">
+              <div class="slide-item">
+                <span class="text-3xl font-bold">KAIA Select Shop<br>網站設計</span>
+                <span class="text-2xl">為居家選物品牌創建線上購物平台，展現品牌的獨特風格和價值傳遞。</span>
+              </div>  
+            </a>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide hover:scale-105">
+            <a href="">
+              <img src="./assets/KAIASelectShop-1x1-2.png" alt="">
+              <div class="slide-item">
+                <span class="text-3xl font-bold">KAIA Select Shop<br>網站設計</span>
+                <span class="text-2xl">為居家選物品牌創建線上購物平台，展現品牌的獨特風格和價值傳遞。</span>
+              </div>  
+            </a>
+          </swiper-slide>
+        </swiper>
       </section>
       <section class="code-area flex w-full p-5 gap-6">
         <div class="w-11/12 flex flex-col gap-[100px] pl-[100px] py-[100px] ">
@@ -72,6 +137,9 @@
         <button>more</button>
       </section>
     </main>
+    <footer>
+      <div class="flex w-full h-[300px] p-8 gap-6 bg-stone-300"></div>
+    </footer>
   <RouterView />
 </template>
 
@@ -89,5 +157,35 @@ li{
 .code-area{
   background-image: url(./assets/white.jpg);
   background-size: cover;
+}
+
+.swiper-slide {
+  width: 400px;
+  height: 85%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px #c2c2c2;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.slide-item{
+  width: 100%;
+  padding: 24px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 </style>

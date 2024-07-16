@@ -16,5 +16,5 @@ export default defineConfig({
   server:{
     open:true
   },
-  base:'profolio.js',
+  base:'Portfolio2024',
 })

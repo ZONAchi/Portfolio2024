@@ -18,6 +18,60 @@
         </div>
       </nav>
     </header>
+    <main class="flex flex-col items-center gap-36">
+      <!-- banner -->
+      <section class="w-full">
+        <img src="./assets/orange-cloud.jpg" class="w-full" alt="">
+      </section>
+      <!-- design區段 -->
+      <section class="flex flex-col w-full p-5">
+        <div class="text-[200px] font-bold text-start text-stone-500">Design</div>
+        <!-- <div class="w-[1700px] h-[2px] bg-stone-400 rotate-45 translate-y-[600px] "></div> -->
+        <div class="flex flex-col gap-5 mb-5">
+            <div class="text-4xl font-bold text-end pr-8 leading-snug">UI/UX設計│平面設計│3D建置</div>
+            <div class="text-2xl text-end pr-8 leading-snug">設計不僅僅是美學的表達，更是溝通的藝術<br>每個設計作品都代表一段故事、一個品牌的靈魂、一種價值的傳遞</div>  
+        </div>
+        <!-- Swiper -->
+  
+      </section>
+      <section class="code-area flex w-full p-5 gap-6">
+        <div class="w-11/12 flex flex-col gap-[100px] pl-[100px] py-[100px] ">
+          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-300 bg-opacity-40 hover:bg-opacity-60">
+            <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
+            <div class="w-5/12 flex flex-col justify-end gap-5 p-8">
+              <span class="text-3xl font-bold">Microsoft 網站首頁</span>
+              <span class="text-2xl">前端切版</span>
+            </div>
+          </a>
+          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-300 bg-opacity-40 hover:bg-opacity-60">
+            <div class="w-5/12 flex flex-col justify-end gap-5 p-8">
+              <span class="text-3xl font-bold">Microsoft 網站首頁</span>
+              <span class="text-2xl">前端切版</span>
+            </div>
+            <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
+          </a>
+          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-300 bg-opacity-40 hover:bg-opacity-60">
+            <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
+            <div class="w-5/12 flex flex-col justify-end gap-5 p-8">
+              <span class="text-3xl font-bold">Microsoft 網站首頁</span>
+              <span class="text-2xl">前端切版</span>
+            </div>
+          </a>
+        </div>
+        <div class="code-title text-[200px] font-bold -translate-y-28 text-stone-500">Code . . . . . . . . . </div>
+      </section>
+      <section class="flex flex-col w-full p-8 gap-6 mb-[100px]">
+        <div class="text-[200px] font-bold translate-y-44 text-stone-500">About</div>
+        <div class="w-full h-[700px] flex p-8">
+          <img class="w-1/2 h-full" src="./assets/bg-blueorange.jpg" alt="">
+          <div class="w-1/2 h-full p-8 flex flex-col justify-end">
+            <span class="text-4xl">title</span>
+            <span>text</span>
+          </div>
+        </div>
+        <button>more</button>
+      </section>
+    </main>
   <RouterView />
 </template>
 
@@ -28,5 +82,12 @@
   }
 li{
   list-style: none;
+}
+.code-title{
+  writing-mode: vertical-rl;
+}
+.code-area{
+  background-image: url(./assets/white.jpg);
+  background-size: cover;
 }
 </style>

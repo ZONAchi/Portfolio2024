@@ -101,22 +101,22 @@ export default {
       </section>
       <section class="code-area flex w-full p-5 gap-6">
         <div class="w-11/12 flex flex-col gap-[100px] pl-[100px] py-[100px] ">
-          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-300 bg-opacity-40 hover:bg-opacity-60">
+          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-50 bg-opacity-40 hover:bg-stone-50 hover:bg-opacity-80">
             <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
             <div class="w-5/12 flex flex-col justify-end gap-5 p-8">
               <span class="text-3xl font-bold">Microsoft 網站首頁</span>
               <span class="text-2xl">前端切版</span>
             </div>
           </a>
-          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-300 bg-opacity-40 hover:bg-opacity-60">
+          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-50 bg-opacity-40 hover:bg-stone-50 hover:bg-opacity-80">
             <div class="w-5/12 flex flex-col justify-end gap-5 p-8">
               <span class="text-3xl font-bold">Microsoft 網站首頁</span>
               <span class="text-2xl">前端切版</span>
             </div>
-            <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
+            <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/COFFEE1920x1080.png" alt="">
           </a>
-          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-300 bg-opacity-40 hover:bg-opacity-60">
-            <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
+          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-50 bg-opacity-40 hover:bg-stone-50 hover:bg-opacity-80">
+            <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/Frame 37.png" alt="">
             <div class="w-5/12 flex flex-col justify-end gap-5 p-8">
               <span class="text-3xl font-bold">Microsoft 網站首頁</span>
               <span class="text-2xl">前端切版</span>
@@ -155,7 +155,7 @@ li{
   writing-mode: vertical-rl;
 }
 .code-area{
-  background-image: url(./assets/white.jpg);
+  background-image: url(./assets/bg-blueorange.jpg);
   background-size: cover;
 }
 

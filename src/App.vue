@@ -28,7 +28,7 @@ export default {
 
 <template>
   <header>
-      <nav class="nav_bar w-full h-[120px] bg-neutral-200 flex justify-between py-5 px-14">
+      <nav class="nav_bar w-full h-[120px] md:max-h-20 bg-neutral-200 flex justify-between py-5 px-14 fixed top-0 z-20">
         <img src="./assets/KAIA-LOGO-notext.png" alt="">
         <div class="flex items-center gap-12">
           <li>
@@ -63,10 +63,19 @@ export default {
           class="mySwiper w-full h-[800px] flex">
           <swiper-slide class="swiper-slide hover:scale-105">
             <a href="">
-              <img src="./assets/KAIASelectShop-1x1-2.png" alt="">
+              <img src="./assets/KAIASelectShop-4x3.png" alt="">
               <div class="slide-item">
-                <span class="text-3xl font-bold">KAIA Select Shop<br>網站設計</span>
-                <span class="text-2xl">為居家選物品牌創建線上購物平台，展現品牌的獨特風格和價值傳遞。</span>
+                <span class="text-3xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-2xl">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
+              </div>  
+            </a>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide hover:scale-105">
+            <a href="">
+              <img src="./assets/figma-googleart4x3.png" alt="">
+              <div class="slide-item">
+                <span class="text-3xl font-bold">Figma<br>Google Art 仿切</span>
+                <span class="text-2xl">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>
           </swiper-slide>
@@ -83,17 +92,8 @@ export default {
             <a href="">
               <img src="./assets/KAIASelectShop-1x1-2.png" alt="">
               <div class="slide-item">
-                <span class="text-3xl font-bold">KAIA Select Shop<br>網站設計</span>
-                <span class="text-2xl">為居家選物品牌創建線上購物平台，展現品牌的獨特風格和價值傳遞。</span>
-              </div>  
-            </a>
-          </swiper-slide>
-          <swiper-slide class="swiper-slide hover:scale-105">
-            <a href="">
-              <img src="./assets/KAIASelectShop-1x1-2.png" alt="">
-              <div class="slide-item">
-                <span class="text-3xl font-bold">KAIA Select Shop<br>網站設計</span>
-                <span class="text-2xl">為居家選物品牌創建線上購物平台，展現品牌的獨特風格和價值傳遞。</span>
+                <span class="text-3xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-2xl">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>
           </swiper-slide>
@@ -146,7 +146,8 @@ export default {
 <style scoped>
 * {
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
   }
 li{
   list-style: none;

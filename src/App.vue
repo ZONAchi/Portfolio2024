@@ -28,17 +28,17 @@ export default {
 
 <template>
   <header>
-      <nav class="w-full nav_bar h-[80px] px-8 lg:h-28 lg:px-14 bg-neutral-200 flex justify-between py-5  fixed top-0 z-20">
-        <img src="./assets/KAIA-LOGO-notext.png" alt="">
-        <div class="flex items-center gap-8 md:gap-12">
+      <nav class="w-full nav_bar h-24 lg:h-28 py-5 lg:px-14 bg-neutral-50 md:bg-neutral-50/75 flex flex-col gap-4 md:flex-row justify-between items-center fixed top-0 z-20">
+        <img class="h-8 px-8 lg:h-16 object-contain" src="./assets/KAIA-LOGO-notext.png" alt="">
+        <div class="flex w-full md:w-auto px-8 items-center justify-between gap-8 md:gap-12 bg-neutral-300 md:bg-transparent">
           <li>
-            <a href="" class="py-3 text-2xl lg:text-4xl hover:text-amber-500">DESIGN</a>
+            <a href="" class="py-3 text-lg md:text-2xl lg:text-4xl hover:text-amber-500">DESIGN</a>
           </li>
           <li >
-            <a href="" class="py-3 text-2xl lg:text-4xl hover:text-amber-500">CODE</a>
+            <a href="" class="py-3 text-lg md:text-2xl lg:text-4xl hover:text-amber-500">CODE</a>
           </li>
           <li >
-            <a href="" class="py-3 text-2xl lg:text-4xl hover:text-amber-500">ABOUT</a>
+            <a href="" class="py-3 text-lg md:text-2xl lg:text-4xl hover:text-amber-500">ABOUT</a>
           </li>
         </div>
       </nav>
@@ -46,7 +46,7 @@ export default {
     <main class="w-full flex flex-col items-center gap-24">
       <!-- banner -->
       <section class="w-full">
-        <img src="./assets/orange-cloud.jpg" class="w-full h-60 md:h-96 lg:h-screen object-cover" alt="">
+        <img src="./assets/orange-cloud.jpg" class="w-full h-72 md:h-96 lg:h-screen object-cover" alt="">
       </section>
       <!-- design區段 -->
       <section class="flex flex-col w-full p-5">

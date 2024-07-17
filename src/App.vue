@@ -28,25 +28,25 @@ export default {
 
 <template>
   <header>
-      <nav class="nav_bar w-full h-[120px] md:max-h-20 bg-neutral-200 flex justify-between py-5 px-14 fixed top-0 z-20">
+      <nav class="w-full nav_bar h-[80px] px-8 lg:h-28 lg:px-14 bg-neutral-200 flex justify-between py-5  fixed top-0 z-20">
         <img src="./assets/KAIA-LOGO-notext.png" alt="">
-        <div class="flex items-center gap-12">
+        <div class="flex items-center gap-8 md:gap-12">
           <li>
-            <a href="" class="py-3 text-4xl hover:text-amber-500">DESIGN</a>
+            <a href="" class="py-3 text-2xl lg:text-4xl hover:text-amber-500">DESIGN</a>
           </li>
           <li >
-            <a href="" class="py-3 text-4xl hover:text-amber-500">CODE</a>
+            <a href="" class="py-3 text-2xl lg:text-4xl hover:text-amber-500">CODE</a>
           </li>
           <li >
-            <a href="" class="py-3 text-4xl hover:text-amber-500">ABOUT</a>
+            <a href="" class="py-3 text-2xl lg:text-4xl hover:text-amber-500">ABOUT</a>
           </li>
         </div>
       </nav>
     </header>
-    <main class="flex flex-col w-screen items-center gap-36">
+    <main class="w-full flex flex-col items-center gap-36">
       <!-- banner -->
       <section class="w-full">
-        <img src="./assets/orange-cloud.jpg" class="w-full" alt="">
+        <img src="./assets/orange-cloud.jpg" class="w-full h-[1200px] md:h-[900px] object-cover" alt="">
       </section>
       <!-- design區段 -->
       <section class="flex flex-col w-full p-5">
@@ -152,6 +152,7 @@ export default {
 li{
   list-style: none;
 }
+
 .code-title{
   writing-mode: vertical-rl;
 }

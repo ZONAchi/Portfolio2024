@@ -43,21 +43,21 @@ export default {
         </div>
       </nav>
     </header>
-    <main class="w-full flex flex-col items-center gap-36">
+    <main class="w-full flex flex-col items-center gap-24">
       <!-- banner -->
       <section class="w-full">
-        <img src="./assets/orange-cloud.jpg" class="w-full h-[1200px] md:h-[900px] object-cover" alt="">
+        <img src="./assets/orange-cloud.jpg" class="w-full h-60 md:h-96 lg:h-screen object-cover" alt="">
       </section>
       <!-- design區段 -->
       <section class="flex flex-col w-full p-5">
-        <div class="text-[200px] font-bold text-start text-stone-500">Design</div>
+        <div class="text-[200px] font-bold text-start text-stone-500">Design . . . </div>
         <!-- <div class="w-[1700px] h-[2px] bg-stone-400 rotate-45 translate-y-[600px] "></div> -->
         <div class="flex flex-col gap-5 mb-5">
             <div class="text-4xl font-bold text-end pr-8 leading-snug">UI/UX設計│平面設計│3D建置</div>
             <div class="text-2xl text-end pr-8 leading-snug">設計不僅僅是美學的表達，更是溝通的藝術<br>每個設計作品都代表一段故事、一個品牌的靈魂、一種價值的傳遞</div>  
         </div>
         <!-- Swiper -->
-        <swiper :slidesPerView="4" :spaceBetween="30" :centeredSlides="true" :pagination="{
+        <swiper :slidesPerView="1" :breakpoints="{768: {slidesPerView: 2}, 1280: {slidesPerView: 4}}" :spaceBetween="30" :centeredSlides="true" :pagination="{
             clickable: true,
           }" :modules="modules"
           class="mySwiper w-full h-[800px] flex">

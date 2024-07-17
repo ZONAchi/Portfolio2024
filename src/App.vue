@@ -81,7 +81,7 @@ export default {
           </swiper-slide>
           <swiper-slide class="swiper-slide hover:scale-105">
             <a href="">
-              <img src="./assets/KAIASelectShop-1x1-2.png" alt="">
+              <img src="./assets/KAIASelectShop-4x3.png" alt="">
               <div class="slide-item">
                 <span class="text-3xl font-bold">KAIA Select Shop<br>網站設計</span>
                 <span class="text-2xl">為居家選物品牌創建線上購物平台，展現品牌的獨特風格和價值傳遞。</span>
@@ -90,7 +90,7 @@ export default {
           </swiper-slide>
           <swiper-slide class="swiper-slide hover:scale-105">
             <a href="">
-              <img src="./assets/KAIASelectShop-1x1-2.png" alt="">
+              <img src="./assets/KAIASelectShop-4x3.png" alt="">
               <div class="slide-item">
                 <span class="text-3xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
                 <span class="text-2xl">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>

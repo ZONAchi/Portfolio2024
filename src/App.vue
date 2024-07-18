@@ -43,57 +43,55 @@ export default {
         </div>
       </nav>
     </header>
-    <main class="w-full flex flex-col items-center gap-24">
+    <main class="w-full flex flex-col items-center gap-8 px-4">
       <!-- banner -->
       <section class="w-full">
         <img src="./assets/orange-cloud.jpg" class="w-full h-72 md:h-96 lg:h-screen object-cover" alt="">
       </section>
       <!-- design區段 -->
       <section class="flex flex-col w-full p-5">
-        <div class="text-[200px] font-bold text-start text-stone-500">Design . . . </div>
+        <div class="text-5xl md:text-[80px] lg:text-[200px] font-bold text-start text-stone-500">Design . . . </div>
         <!-- <div class="w-[1700px] h-[2px] bg-stone-400 rotate-45 translate-y-[600px] "></div> -->
         <div class="flex flex-col gap-5 mb-5">
-            <div class="text-4xl font-bold text-end pr-8 leading-snug">UI/UX設計│平面設計│3D建置</div>
-            <div class="text-2xl text-end pr-8 leading-snug">設計不僅僅是美學的表達，更是溝通的藝術<br>每個設計作品都代表一段故事、一個品牌的靈魂、一種價值的傳遞</div>  
+            <div class="text-xl lg:text-4xl font-bold pr-8 leading-snug">UI/UX設計│平面設計│3D建置</div>
+            <div class="text-base lg:text-2xl pr-8 leading-snug">設計是美學的表達，更是溝通的藝術<br>每個設計作品都代表一段故事、一個品牌的靈魂、一種價值的傳遞</div>  
         </div>
         <!-- Swiper -->
-        <swiper :slidesPerView="1" :breakpoints="{768: {slidesPerView: 2}, 1280: {slidesPerView: 4}}" :spaceBetween="30" :centeredSlides="true" :pagination="{
-            clickable: true,
-          }" :modules="modules"
-          class="mySwiper w-full h-[800px] flex">
-          <swiper-slide class="swiper-slide hover:scale-105">
+        <swiper :slidesPerView="1" :breakpoints="{768: {slidesPerView: 2 , centeredSlides:false}, 1280: {slidesPerView: 4}}" :spaceBetween="30" :centeredSlides="true" :modules="modules"
+          class="mySwiper w-full h:[600px] lg:h-[700px] flex">
+          <swiper-slide class="swiper-slide">
             <a href="">
-              <img src="./assets/KAIASelectShop-4x3.png" alt="">
+              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
               <div class="slide-item">
-                <span class="text-3xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
-                <span class="text-2xl">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
+                <span class="text-lg lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>
           </swiper-slide>
-          <swiper-slide class="swiper-slide hover:scale-105">
+          <swiper-slide class="swiper-slide">
             <a href="">
-              <img src="./assets/figma-googleart4x3.png" alt="">
+              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
               <div class="slide-item">
-                <span class="text-3xl font-bold">Figma<br>Google Art 仿切</span>
-                <span class="text-2xl">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
+                <span class="text-xl lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>
           </swiper-slide>
-          <swiper-slide class="swiper-slide hover:scale-105">
+          <swiper-slide class="swiper-slide">
             <a href="">
-              <img src="./assets/KAIASelectShop-4x3.png" alt="">
+              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
               <div class="slide-item">
-                <span class="text-3xl font-bold">KAIA Select Shop<br>網站設計</span>
-                <span class="text-2xl">為居家選物品牌創建線上購物平台，展現品牌的獨特風格和價值傳遞。</span>
+                <span class="text-xl lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>
           </swiper-slide>
-          <swiper-slide class="swiper-slide hover:scale-105">
+          <swiper-slide class="swiper-slide">
             <a href="">
-              <img src="./assets/KAIASelectShop-4x3.png" alt="">
+              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
               <div class="slide-item">
-                <span class="text-3xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
-                <span class="text-2xl">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
+                <span class="text-xl lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>
           </swiper-slide>
@@ -161,24 +159,27 @@ li{
   background-size: cover;
 }
 
+.mySwiper{
+  padding: 8px;
+}
+
 .swiper-slide {
-  width: 400px;
-  height: 85%;
+  height: 80%;
   text-align: center;
   font-size: 18px;
   background: #fff;
   /* Center slide text vertically */
   display: flex;
   flex-direction: column;
-  margin:auto;
   border-radius: 20px;
-  box-shadow: 0 0 10px 5px #c2c2c2;
+  box-shadow: 0 0 10px 2px #e1e1e1;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
   object-fit: cover;
+  object-position: top;
   border-radius: 20px;
 }
 

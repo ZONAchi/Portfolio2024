@@ -49,8 +49,8 @@ export default {
     </header>
     <main class="w-full flex flex-col items-center gap-8">
       <!-- design區段 -->
-      <section class="flex flex-col w-full">
-        <div class="ml-[50px] lg-ml-[100px]">
+      <section class="flex flex-col w-full px-[50px] md:px-0">
+        <div class="md:ml-[50px] lg:ml-[100px]">
           <div class="text-5xl md:text-[80px] lg:text-[200px] font-bold text-start text-stone-500">Design . . . </div>
           <!-- <div class="w-[1700px] h-[2px] bg-stone-400 rotate-45 translate-y-[600px] "></div> -->
           <div class="flex flex-col gap-5 mb-5 px-4">
@@ -58,13 +58,14 @@ export default {
               <div class="text-base lg:text-2xl pr-8 leading-snug">設計是美學的表達，更是溝通的藝術<br>每個設計作品都代表一段故事、一個品牌的靈魂、一種價值的傳遞</div>  
           </div>
         </div>
-        
         <!-- Swiper -->
         <swiper :slidesPerView="1" :breakpoints="{768: {slidesPerView: 2 , centeredSlides:false}, 1280: {slidesPerView: 4 ,centeredSlides:true}}" :spaceBetween="30" :modules="modules"
           class="mySwiper w-full h:[600px] lg:h-[700px] flex">
           <swiper-slide class="swiper-slide">
             <a href="">
-              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
+              <div class="w-full h-[300px] rounded-[20px] overflow-hidden">
+                <img src="./assets/KAIASelectShop-4x3.png" alt="">
+              </div>
               <div class="slide-item">
                 <span class="text-lg lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
                 <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
@@ -73,36 +74,33 @@ export default {
           </swiper-slide>
           <swiper-slide class="swiper-slide">
             <a href="">
-              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
+              <div class="w-full h-[300px] rounded-[20px] overflow-hidden">
+                <img src="./assets/KAIASelectShop-4x3.png" alt="">
+              </div>
               <div class="slide-item">
-                <span class="text-xl lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-lg lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
                 <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>
           </swiper-slide>
           <swiper-slide class="swiper-slide">
             <a href="">
-              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
+              <div class="w-full h-[300px] rounded-[20px] overflow-hidden">
+                <img src="./assets/KAIASelectShop-4x3.png" alt="">
+              </div>
               <div class="slide-item">
-                <span class="text-xl lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-lg lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
                 <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>
           </swiper-slide>
           <swiper-slide class="swiper-slide">
             <a href="">
-              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
+              <div class="w-full h-[300px] rounded-[20px] overflow-hidden">
+                <img src="./assets/KAIASelectShop-4x3.png" alt="">
+              </div>
               <div class="slide-item">
-                <span class="text-xl lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
-                <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
-              </div>  
-            </a>
-          </swiper-slide>
-          <swiper-slide class="swiper-slide">
-            <a href="">
-              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
-              <div class="slide-item">
-                <span class="text-xl lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-lg lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
                 <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>
@@ -187,12 +185,11 @@ li{
   box-shadow: 0 0 10px 2px #e1e1e1;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
+.swiper-slide :hover img{
   object-position: top;
-  border-radius: 20px;
+  transform: scale(1.2);
+  transition: 1s;
+  overflow: hidden;
 }
 
 .slide-item{

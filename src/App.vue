@@ -42,28 +42,40 @@ export default {
           </li>
         </div>
       </nav>
-    </header>
-    <main class="w-full flex flex-col items-center gap-8 px-4">
       <!-- banner -->
       <section class="w-full">
         <img src="./assets/orange-cloud.jpg" class="w-full h-72 md:h-96 lg:h-screen object-cover" alt="">
       </section>
+    </header>
+    <main class="w-full flex flex-col items-center gap-8">
       <!-- design區段 -->
-      <section class="flex flex-col w-full p-5">
-        <div class="text-5xl md:text-[80px] lg:text-[200px] font-bold text-start text-stone-500">Design . . . </div>
-        <!-- <div class="w-[1700px] h-[2px] bg-stone-400 rotate-45 translate-y-[600px] "></div> -->
-        <div class="flex flex-col gap-5 mb-5">
-            <div class="text-xl lg:text-4xl font-bold pr-8 leading-snug">UI/UX設計│平面設計│3D建置</div>
-            <div class="text-base lg:text-2xl pr-8 leading-snug">設計是美學的表達，更是溝通的藝術<br>每個設計作品都代表一段故事、一個品牌的靈魂、一種價值的傳遞</div>  
+      <section class="flex flex-col w-full">
+        <div class="ml-[50px] lg-ml-[100px]">
+          <div class="text-5xl md:text-[80px] lg:text-[200px] font-bold text-start text-stone-500">Design . . . </div>
+          <!-- <div class="w-[1700px] h-[2px] bg-stone-400 rotate-45 translate-y-[600px] "></div> -->
+          <div class="flex flex-col gap-5 mb-5 px-4">
+              <div class="text-xl lg:text-4xl font-bold pr-8 leading-snug">UI/UX設計│平面設計│3D建置</div>
+              <div class="text-base lg:text-2xl pr-8 leading-snug">設計是美學的表達，更是溝通的藝術<br>每個設計作品都代表一段故事、一個品牌的靈魂、一種價值的傳遞</div>  
+          </div>
         </div>
+        
         <!-- Swiper -->
-        <swiper :slidesPerView="1" :breakpoints="{768: {slidesPerView: 2 , centeredSlides:false}, 1280: {slidesPerView: 4}}" :spaceBetween="30" :centeredSlides="true" :modules="modules"
+        <swiper :slidesPerView="1" :breakpoints="{768: {slidesPerView: 2 , centeredSlides:false}, 1280: {slidesPerView: 4 ,centeredSlides:true}}" :spaceBetween="30" :modules="modules"
           class="mySwiper w-full h:[600px] lg:h-[700px] flex">
           <swiper-slide class="swiper-slide">
             <a href="">
               <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
               <div class="slide-item">
                 <span class="text-lg lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
+                <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
+              </div>  
+            </a>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide">
+            <a href="">
+              <img class="h-[300px]" src="./assets/KAIASelectShop-4x3.png" alt="">
+              <div class="slide-item">
+                <span class="text-xl lg:text-2xl font-bold">KAIA Select Shop<br>品牌網站設計</span>
                 <span class="text-base lg:text-xl text-ellipsis">為使用者提供清新、舒適的線上購物平台，呈現品質家居用品和生活美學。</span>
               </div>  
             </a>

@@ -51,7 +51,7 @@ export default {
       <!-- design區段 -->
       <section class="flex flex-col w-full px-[50px] xl:px-0">
         <div class="xl:ml-[100px]">
-          <div class="py-16 text-5xl md:text-[120px] xl:text-[200px] font-bold text-start text-stone-500">Design . . . </div>
+          <div class="py-8 md:py-16 text-5xl md:text-[120px] xl:text-[200px] font-bold text-start text-stone-500">Design . . . </div>
           <!-- <div class="w-[1700px] h-[2px] bg-stone-400 rotate-45 translate-y-[600px] "></div> -->
           <div class="flex flex-col gap-5 mb-5 xl:px-4">
               <div class="text-xl lg:text-4xl font-bold pr-8 leading-snug">UI/UX設計│平面設計│3D建置</div>
@@ -59,7 +59,7 @@ export default {
           </div>
         </div>
         <!-- Swiper -->
-        <swiper :slidesPerView="1" :breakpoints="{768: {slidesPerView: 2 , centeredSlides:false}, 1280: {slidesPerView: 4 ,centeredSlides:true}}" :spaceBetween="30" :modules="modules"
+        <swiper :slidesPerView="1.2" :breakpoints="{768: {slidesPerView: 2.2 , centeredSlides:false}, 1280: {slidesPerView: 3.5 ,centeredSlides:true}}" :spaceBetween="30" :modules="modules"
           class="mySwiper w-full h:[600px] lg:h-[700px] flex">
           <swiper-slide class="swiper-slide">
             <a href="">
@@ -107,8 +107,9 @@ export default {
           </swiper-slide>
         </swiper>
       </section>
-      <section class="code-area flex flex-col xl:flex-row w-full p-5">
-        <div class="xl:w-11/12 flex flex-col gap-[50px] xl:gap-[100px] px-[50px] xl:pl-[100px] py-[100px] ">
+      <section class="code-area flex flex-col w-full p-5">
+        <div class="text-5xl md:text-[120px] xl:text-[200px] font-bold px-[50px] translate-y-20 text-stone-500 text-right">Code</div>
+        <div class="grid grid-cols-1 2xl:grid-cols-2 gap-[20px] xl:gap-[50px] px-[50px] xl:pl-[100px] py-[100px] ">
           <a href="" class="w-full h-[500px] flex flex-col xl:flex-row rounded-3xl bg-stone-50 bg-opacity-40 hover:bg-stone-50 hover:bg-opacity-80">
             <img class="h-3/4 xl:h-full xl:w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
             <div class="h-1/4 xl:h-full xl:w-5/12 flex flex-col justify-end gap-2 p-6">
@@ -116,28 +117,35 @@ export default {
               <span class="text-2xl">前端切版</span>
             </div>
           </a>
-          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-50 bg-opacity-40 hover:bg-stone-50 hover:bg-opacity-80">
-            <div class="w-5/12 flex flex-col justify-end gap-5 p-8">
+          <a href="" class="w-full h-[500px] flex flex-col xl:flex-row rounded-3xl bg-stone-50 bg-opacity-40 hover:bg-stone-50 hover:bg-opacity-80">
+            <img class="h-3/4 xl:h-full xl:w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
+            <div class="h-1/4 xl:h-full xl:w-5/12 flex flex-col justify-end gap-2 p-6">
               <span class="text-3xl font-bold">Microsoft 網站首頁</span>
               <span class="text-2xl">前端切版</span>
             </div>
-            <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/COFFEE1920x1080.png" alt="">
           </a>
-          <a href="" class="w-full h-[500px] flex flex-row rounded-3xl bg-stone-50 bg-opacity-40 hover:bg-stone-50 hover:bg-opacity-80">
-            <img class="w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/Frame 37.png" alt="">
-            <div class="w-5/12 flex flex-col justify-end gap-5 p-8">
+          <a href="" class="w-full h-[500px] flex flex-col xl:flex-row rounded-3xl bg-stone-50 bg-opacity-40 hover:bg-stone-50 hover:bg-opacity-80">
+            <img class="h-3/4 xl:h-full xl:w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
+            <div class="h-1/4 xl:h-full xl:w-5/12 flex flex-col justify-end gap-2 p-6">
+              <span class="text-3xl font-bold">Microsoft 網站首頁</span>
+              <span class="text-2xl">前端切版</span>
+            </div>
+          </a>
+          <a href="" class="w-full h-[500px] flex flex-col xl:flex-row rounded-3xl bg-stone-50 bg-opacity-40 hover:bg-stone-50 hover:bg-opacity-80">
+            <img class="h-3/4 xl:h-full xl:w-7/12 object-cover object-top rounded-3xl shadow-xl z-10" src="./assets/microsoft.png" alt="">
+            <div class="h-1/4 xl:h-full xl:w-5/12 flex flex-col justify-end gap-2 p-6">
               <span class="text-3xl font-bold">Microsoft 網站首頁</span>
               <span class="text-2xl">前端切版</span>
             </div>
           </a>
         </div>
-        <div class="code-title text-5xl md:text-[120px] xl:text-[200px] font-bold -translate-y-28 xl:-translate-x-12 text-stone-500">Code . . . . . . </div>
+        
       </section>
       <section class="flex flex-col w-full p-8 gap-6 mb-[100px]">
-        <div class="text-[200px] font-bold translate-y-44 text-stone-500">About</div>
-        <div class="w-full h-[700px] flex p-8">
-          <img class="w-1/2 h-full" src="./assets/bg-blueorange.jpg" alt="">
-          <div class="w-1/2 h-full p-8 flex flex-col justify-end">
+        <div class="text-5xl md:text-[120px] xl:text-[200px] translate-y-24 xl:translate-y-36 font-bold text-start text-stone-500">About</div>
+        <div class="w-full h-[700px] flex flex-col xl:flex-row p-8">
+          <img class=" h-full" src="./assets/bg-blueorange.jpg" alt="">
+          <div class="h-full p-8 flex flex-col justify-end">
             <span class="text-4xl">title</span>
             <span>text</span>
           </div>
@@ -159,10 +167,10 @@ export default {
 li{
   list-style: none;
 }
-
+/* 
 .code-title{
   writing-mode: vertical-rl;
-}
+} */
 
 @media(max-width:1280px){
   .code-title{
